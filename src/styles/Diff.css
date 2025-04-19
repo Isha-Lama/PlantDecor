@@ -1,0 +1,54 @@
+/* Diff.css */
+.diff-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #384031;
+  }
+  
+  .diff-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .diff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .diff-item {
+    background: #ffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .diff-icon {
+    font-size: 40px;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+  }
+  
+  .diff-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .diff-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .diff-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  

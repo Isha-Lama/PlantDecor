@@ -1,0 +1,97 @@
+/* CheckoutForm.css */
+
+.checkout-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 55px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-form h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .checkout-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .checkout-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .checkout-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .total-amount {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .checkout-form button {
+    width: 48%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-btn {
+    background-color: #28a745; /* Green button for Pay via eSewa */
+    color: white;
+  }
+  
+  .pay-btn:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545; /* Red button for Cancel */
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .checkout-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: none;
+  }
+  

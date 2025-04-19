@@ -1,0 +1,94 @@
+/* Basic styling for navbar */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* src/styles/HeroSection.css */
+
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: crisp-edges;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 120px;
+}
+
+.hero-content {
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateY(0px);
+}
+
+.hero-content.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Hero Content (Title, Subtitle, Button) */
+.hero-content {
+  text-align: left;
+  color: white;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 2.5s ease;
+}
+
+/* Button Styling */
+.buy-now-btn {
+  padding: 12px 25px;
+  font-size: 20px;
+  background-color: #8e5a1b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+}
+
+.buy-now-btn:hover {
+  background-color: #6f3d1a;
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
+.buy-now-btn:focus {
+  outline: none;
+}
+
+
+
+/* Keyframe Animation for Fade-In Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

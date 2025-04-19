@@ -1,0 +1,134 @@
+/* src/styles/Nav.css */
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #accaa1;
+    color: white;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-center ul {
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+    margin: 0;
+  }
+  
+  .navbar-center ul li {
+    display: inline;
+  }
+  
+  .navbar-center ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar-center ul li a:hover {
+    color: #8e5a1b;
+  }
+  
+  .navbar-center ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8e5a1b;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar-center ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #845919;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    opacity: 0.7;
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .search-input {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border: 2px solid #8e5a1b;
+  }
+  
+ /* Search Button Styling */
+.search-button {
+  background-color: #8e5a1b;
+  color: white;
+  padding: 8px 16px;  /* Reduced padding */
+  font-size: 14px;  /* Reduced font size */
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.search-button:hover {
+  background-color: #6a3e1f;
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus Effect */
+.search-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(142, 90, 27, 0.6);
+}

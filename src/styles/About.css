@@ -1,0 +1,194 @@
+/* General Page Styling */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navvbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #809671; /* Changed to aesthetic green #9dc183 */
+    color: white;
+}
+
+.navvbar .logo a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 40px; /* Adjust the width of the logo */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.navv-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navv-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navv-links li a:hover {
+    color: #79451d;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 200px 20px;  /* Increased the vertical padding */
+    color: white;
+    background-color: #9dc183; /* Changed to aesthetic green #9dc183 */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Sections */
+.about-section {
+    padding: 60px 5%; /* Reduced the side padding for a wider layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Reduced gap to push elements closer */
+    max-width: 1000px;
+    margin: 0 20px; /* Added margins for the container */
+}
+
+.about-image img {
+    width: 450px; /* Increased the width of the image */
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    max-width: 600px; /* Increased the width for the text */
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #234a08; /* Changed to aesthetic green #9dc183 */
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    background-color: #809671; /* Changed to aesthetic green #9dc183 */
+    color: white;
+    padding: 50px 20px;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+}
+
+
+/* Footer Styling */
+.heyfooter {
+    background-color: #384031; /* Green background, you can adjust the shade */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .heyfooter p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+
+.subscribe-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #e6e213;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.subscribe-box button:hover {
+    background-color: #87e30e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 350px; /* Slightly smaller for mobile */
+    }
+
+    .about-text {
+        max-width: 90%; /* Allow text to fill more space on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+}
+

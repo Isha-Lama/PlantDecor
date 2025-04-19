@@ -1,0 +1,37 @@
+/* Shop Page Layout */
+.shop-page {
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    
+  }
+  
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .show-more-btn, .show-less-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #8e5a1b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-more-btn:hover, .show-less-btn:hover {
+    background-color: #6f3d1a;
+  }
+  

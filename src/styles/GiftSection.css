@@ -1,0 +1,189 @@
+/* General Styles for the Gift Section */
+.gift-section {
+  padding: 30px;
+  background: linear-gradient(to right, #fde3dd, #baeca3);
+  margin-bottom: 0;
+  position: relative; /* Ensures the button stays inside the section */
+  padding-bottom: 80px;
+}
+
+.gift-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #50362d;
+}
+
+/* Grid for Gift Cards */
+.gift-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1200px; /* Limit max width of the grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+@media screen and (max-width: 768px) {
+  .gift-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gift-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
+/* Gift Card Box */
+.gift-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 380px; /* Card height remains the same */
+  width: 280px; /* Reduced width for smaller cards */
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; /* Prevent overflow from image or content */
+  margin: 0 auto; /* Center the card */
+}
+
+.gift-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image Container */
+.gift-image-container {
+  position: relative;
+  height: 70%; /* Increased height for image container */
+  overflow: hidden;
+}
+
+/* Gift Image */
+.gift-image {
+  width: 100%;
+  height: 100%; /* Ensure image fills container height */
+  object-fit: cover; /* Ensure image maintains its aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.gift-image-container:hover .gift-image {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Overlay for Buttons */
+.gift-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s ease;
+}
+
+.gift-card:hover .gift-overlay {
+  opacity: 1;
+}
+
+/* Add to Cart Button */
+.cart-btn,
+.fav-btn {
+  display: none;
+}
+
+.gift-overlay:hover .cart-btn,
+.gift-overlay:hover .fav-btn {
+  display: block;
+}
+
+.cart-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 8px 18px; /* Reduced padding for smaller button */
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Favorite Button */
+.fav-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem; /* Slightly smaller icon */
+  transition: color 0.3s ease;
+}
+
+.fav-btn:hover {
+  color: red;
+}
+
+.fav-btn.active {
+  color: red;
+}
+
+.fav-icon {
+  font-size: 2rem;
+}
+
+/* Gift Product Details */
+.gift-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px; /* Adjusted margin for tighter spacing */
+}
+
+.gift-price {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px; /* Adjusted margin for closer fit */
+}
+
+/* View All Button */
+.view-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0; /* Centers horizontally */
+  padding: 12px 24px;
+  background-color: #d5957d; /* Brownish color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: fit-content; /* Ensures proper width */
+  text-align: center;
+  position: absolute; /* Fixes the button at the bottom center */
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px; /* Adjusts distance from bottom */
+}
+
+
+.view-all-btn:hover {
+  background-color: #6a463a; /* Darker brown on hover */
+}
+
+
+
+.view-all-btn:hover {
+  background-color: #6d4c41; /* Darker brown on hover */
+}

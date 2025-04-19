@@ -1,0 +1,128 @@
+/* Inspiration Section */
+.inspo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 120px;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin: 40px 0;
+    margin-top: 0;  /* Remove extra space */
+ 
+  }
+  
+  /* Left Side Text Content with Card-like Design */
+.inspo-text {
+    flex: 1;
+    max-width: 400px;
+    min-height: 380px; /* Increased height */
+    background-color: #fdf1e6; /* New warm beige color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px; /* More padding for a spacious look */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    transform: translateY(-10px); /* Slightly lift the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+  }
+  
+  /* Add hover effect for a subtle lift */
+  .inspo-text:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Hover effect for card */
+  .inspo-text:hover {
+    transform: translateY(-15px); /* Lift further on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  .inspo-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8e5a1b;
+    margin-bottom: 10px;
+  }
+  
+  .inspo-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .explore-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #8e5a1b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #6f3d1a;
+  }
+  
+  /* Right Side: Scrollable Cards */
+  .inspo-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    max-width: 60%;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+  }
+  
+  /* Inspiration Cards */
+  .card {
+    min-width: 350px; /* Larger card size */
+    height: 600px; /* Larger card height */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, scale 0.3s ease;
+    position: relative;
+  }
+  
+  /* Title for each inspo inside the card */
+  .card-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for better text visibility */
+  }
+  
+  /* Image styling */
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Hover effect for the cards */
+  .card:hover {
+    transform: scale(1.05); /* Enlarge slightly when hovered */
+  }
+  
+  /* Add smooth scroll effect */
+  .inspo-cards::-webkit-scrollbar {
+    height: 15px;
+  }
+  
+  .inspo-cards::-webkit-scrollbar-thumb {
+    background-color: #8e5a1b;
+    border-radius: 10px;
+  }
+  
+  .inspo-cards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
