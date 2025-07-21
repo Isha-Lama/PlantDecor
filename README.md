@@ -11,9 +11,9 @@ Key features include:<br>
 
 This project demonstrates full-stack development skills, combining RESTful API design, React component-based UI, and third-party payment integration.<br>
 
-![Plant Decor Store Screenshot](https://raw.githubusercontent.com/Isha-Lama/portfolio_isha/main/essentials/plantdecor/home.png)
-
-
+![Plant Decor Store Screenshot](https://raw.githubusercontent.com/Isha-Lama/portfolio_isha/main/essentials/plantdecor/home.png) <br> <br>
+![Plant Decor Store Screenshot](https://github.com/Isha-Lama/portfolio_isha/blob/main/essentials/plantdecor/product.png) <br> <br>
+![Plant Decor Store Screenshot](https://github.com/Isha-Lama/portfolio_isha/blob/main/essentials/plantdecor/cart.png)
 
 
 
