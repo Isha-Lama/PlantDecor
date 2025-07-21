@@ -1,3 +1,22 @@
+Plant Decor Store
+🌿 Plant Decor Store is a modern, user-friendly eCommerce web application designed to help plant enthusiasts browse, select, and purchase a variety of indoor and outdoor plants, decorative pots, and garden accessories. Built with Node.js for the backend and React.js for the frontend, the platform offers a seamless shopping experience with dynamic product listings, detailed product views, and an intuitive interface.
+
+Key features include:
+-Comprehensive product catalog with plants, pots, and decor items, complete with images and descriptions.
+-Secure user authentication and account management to keep customer data safe.
+-Integrated eSewa payment gateway for fast, reliable, and secure online payments.
+-Responsive design that works beautifully across desktops, tablets, and smartphones.
+-Shopping cart and checkout system that simplifies order management.
+-Admin panel (if applicable) for managing inventory, orders, and customer queries.
+
+This project demonstrates full-stack development skills, combining RESTful API design, React component-based UI, and third-party payment integration.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
