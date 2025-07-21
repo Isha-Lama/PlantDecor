@@ -9,8 +9,9 @@ Key features include:<br>
 -Shopping cart and checkout system that simplifies order management.<br>
 -Admin panel (if applicable) for managing inventory, orders, and customer queries.<br>
 
-This project demonstrates full-stack development skills, combining RESTful API design, React component-based UI, and third-party payment integration.
+This project demonstrates full-stack development skills, combining RESTful API design, React component-based UI, and third-party payment integration.<br>
 
+![Plant Decor Store Screenshot](https://raw.githubusercontent.com/Isha-Lama/portfolio_isha/main/essentials/plantdecor/home.png)
 
 
 
